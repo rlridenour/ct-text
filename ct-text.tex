@@ -1,8 +1,12 @@
 % arara: lualatex: { interaction: nonstopmode, synctex: yes }
+% arara: lualatex: { interaction: nonstopmode, synctex: yes }
+% arara: biber
+% arara: lualatex: { interaction: nonstopmode, synctex: yes }
 
 \documentclass[letterpaper,12pt,oneside,onecolumn]{memoir}
 
 \usepackage{graphicx,epstopdf,amsmath,amssymb,url,booktabs}
+\graphicspath{{images/}}
 \usepackage{microtype,todonotes}
 \usepackage[american]{babel}
 \usepackage[sf,sc]{titlesec}
@@ -14,6 +18,8 @@
 
 \usepackage[authordate,url=false,isbn=false,backend=biber]{biblatex-chicago} %Change authordate to notes if desired.
 \addbibresource{/Users/rlridenour/Dropbox/bibtex/rlr.bib}
+
+
 
 
 \usepackage{lualatex-math,luatextra}
@@ -29,6 +35,11 @@
     urlcolor={blue!80!black}
 }
 
+\newcommand{\lneg}{\neg}
+\renewcommand{\land}{\mathbin{\&}}
+\newcommand{\lif}{\rightarrow}
+\newcommand{\liff}{\leftrightarrow}
+
 \title{Pursuing Truth: A Guide to Critical Thinking}
 \author{Randy Ridenour}
 % \date{}  % Activate to display a given date or no date
@@ -38,11 +49,16 @@
 
 \frontmatter
 
-\begin{titlingpage}
-  \maketitle
-\end{titlingpage}
-  
 
+
+
+\begin{titlingpage}
+  \pagestyle{empty}
+  \begin{center}
+    \includegraphics[height=\textheight]{ct-text-cover.png}
+  \end{center}
+  \clearpage
+\end{titlingpage}
 
 \tableofcontents*
 
@@ -53,7 +69,13 @@
 \include{intro}
 \include{arguments}
 \include{categorical}
+\include{proposition}
 
-% \printbibliography
+\printbibliography
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,355 @@
+
+\chapter{Propositional Logic}
+\label{chap:prop-logic}
+
+Categorical logic is a great way to analyze arguments, but only certain kinds of arguments. It is limited to arguments that have only two premises and the four kinds of categorical sentences. This means that certain common arguments that are obviously valid will not even be well-formed arguments in categorical logic. Here is an example:
+
+\begin{enumerate}
+\item
+  I will either go out for dinner tonight or go out for breakfast tomorrow.
+\item
+  I won't go out for dinner tonight.
+\item
+  I will go out for breakfast tomorrow.
+\end{enumerate}
+
+None of these sentences fit any of the four categorical schemes. So, we need a new logic, called propositional logic. The good news is that it is fairly simple.
+
+\section{Simple and Complex Sentences}\label{simple-and-complex-sentences}
+
+The fundamental logical unit in categorical logic was a category, or class of things. The fundamental logical unit in propositional logic is a statement, or proposition\footnote{Informally, we use `proposition' and `statement' interchangeably. Strictly speaking, the proposition is the content, or meaning, that the statement expresses. When different sentences in different languages mean the same thing, it is because they express the same proposition.} Simple statements are statements that contain no other statement as a part. Here are some examples:
+
+\begin{itemize}
+\item
+  Oklahoma Baptist University is in Shawnee, Oklahoma.
+\item
+  Barack Obama was succeeded as President of the US by Donald Trump.
+\item
+  It is 33 degrees outside.
+\end{itemize}
+
+Simple sentences are symbolized by uppercase letters. Just pick a letter that makes sense, given the sentence to be symbolized, that way you can more easily remember which letter means which sentence.
+
+Complex sentences have at least one sentence as a component. There are five types in propositional logic:
+
+\begin{itemize}
+\item
+  Negations
+\item
+  Conjunctions
+\item
+  Disjunctions
+\item
+  Conditionals
+\item
+  Biconditionals
+\end{itemize}
+
+\subsection{Negations}\label{negations}
+
+Negations are ``not'' sentences. They assert that something is not the case. For example, the negation of the simple sentence ``Oklahoma Baptist University is in Shawnee, Oklahoma'' is ``Oklahoma Baptist University is not in Shawnee, Oklahoma.'' In general, a simple way to form a negation is to just place the phrase ``It is not the case that'' before the sentence to be negated.
+
+A negation is symbolized by placing this symbol `\(\neg\)' before the sentence-letter. The symbol looks like a dash with a little tail on its right side. If \(\textrm{D}\) = `It is 33 degrees outside,' then \(\neg \textrm{D}\) = `It is not 33 degrees outside.' The negation symbol is used to translate these English phrases:
+
+\begin{itemize}
+\item
+  not
+\item
+  it is not the case that
+\item
+  it is not true that
+\item
+  it is false that
+\end{itemize}
+
+A negation is true whenever the negated sentence is false. If it is true that it is not 33 degrees outside, then it must be false that it is 33 degrees outside. if it is false that Tulsa is the capital of Oklahoma, then it is true that Tulsa is not the capital of Oklahoma.
+
+When translating, try to keep the simple sentences positive in meaning. Note the warning on page 24, about the example of affirming and denying. Denying is not simply the negation of affirming.
+
+\section{Conjunction}\label{conjunction}
+
+Negations are ``and'' sentences. They put two sentences, called conjuncts, together and claim that they are both true. We'll use the ampersand (\&) to signify a negation. Other common symbols are a dot and an upside down wedge. The English words that are translated with the ampersand include:
+
+\begin{itemize}
+\item
+  and
+\item
+  but
+\item
+  also
+\item
+  however
+\item
+  yet
+\item
+  still
+\item
+  moreover
+\item
+  although
+\item
+  nevertheless
+\item
+  both
+\end{itemize}
+
+For example, we would translate the sentence `It is raining today and my sunroof is open' as `\(\textrm{R} \& \textrm{O}\)'.
+
+\section{Disjunction}\label{disjunction}
+
+A disjunction is an ``or'' sentence. It claims that at least one of two sentences, called disjuncts, is true. For example, if I say that either I will go to the movies this weekend or I will stay home and grade critical thinking homework, then I have told the truth provided that I do one or both of those things. If I do neither, though, then my claim was false.
+
+We use this symbol, called a ``vel,'' for disjunctions: \(\vee\). The vel is used to translate
+- or
+- either\dots or
+- unless
+
+\section{Conditional}\label{conditional}
+
+The conditional is a common type of sentence. It claims that something is true, if something else is also. Examples of conditionals are
+
+\begin{itemize}
+\item
+  ``If Sarah makes an A on the final, then she will get an A for the course.''
+\item
+  ``Your car will last many years, provided you perform the required maintenance.''
+\item
+  ``You can light that match only if it is not wet.''
+\end{itemize}
+
+We can translate those sentences with an arrow like this:
+
+\begin{itemize}
+
+\item
+  \(F \rightarrow C\)
+\item
+  \(M \rightarrow L\)
+\item
+  \(L \rightarrow \neg W\)
+\end{itemize}
+
+The arrow translates many English words and phrases, including
+
+\begin{itemize}
+
+\item
+  if
+\item
+  if\ldots{} then
+\item
+  only if
+\item
+  whenever
+\item
+  when
+\item
+  only when
+\item
+  implies
+\item
+  provided that
+\item
+  means
+\item
+  entails
+\item
+  is a sufficient condition for
+\item
+  is a necessary condition for
+\item
+  given that
+\item
+  on the condition that
+\item
+  in case
+\end{itemize}
+
+One big difference between conditionals and other sentences, like conjunctions and disjunctions, is that order matters. Notice that there is no logical difference between the following two sentences:
+
+\begin{itemize}
+
+\item
+  Albany is the capital of New York and Austin is the capital of Texas.
+\item
+  Austin is the capital of Texas and Albany is the capital of New York.
+\end{itemize}
+
+They essentially assert exactly the same thing, that both of those conjuncts are true. So, changing order of the conjuncts or disjuncts does not change the meaning of the sentence, and if meaning doesn't change, then true value doesn't change.
+
+That's not true of conditionals. Note the difference between these two sentences:
+
+\begin{itemize}
+
+\item
+  If you drew a diamond, then you drew a red card.
+\item
+  If you drew a red card, then you drew a diamond.
+\end{itemize}
+
+The first sentence \emph{must} be true. if you drew a diamond, then that guarantees that it's a red card. The second sentence, though, could be false. Your drawing a red card doesn't guarantee that you drew a diamond, you could have drawn a heart instead. So, we need to be able to specify which sentence goes before the arrow and which sentence goes after. The sentence before the arrow is called the antecedent, and the sentence after the arrow is called the consequent.
+
+Look at those three examples again:
+
+\begin{enumerate}
+
+\item
+  ``If Sarah makes an A on the final, then she will get an A for the course.''
+\item
+  ``Your car will last many years, provided you perform the required maintenance.''
+\item
+  ``You can light that match only if it is not wet.''
+\end{enumerate}
+
+The antecedent for the first sentence is ``Sarah makes an A on the final.'' The consequent is ``She will get an A for the course.'' Note that the \texttt{if} and the \texttt{then} are not parts of the antecedent and consequent.
+
+In the second sentence, the antecdent is ``You perform the required maintenance.'' The consequent is ``Your car will last many years.'' This tells us that the antecedent won't always come first in the English sentence.
+
+The third sentence is tricky. The antecedent is ``You can light that match.'' Why? The explanation involves something called necessary and sufficient conditions.
+
+\subsection{Necessary and Sufficient Conditions}\label{necessary-and-sufficient-conditions}
+
+A sufficient condition is something that is enough to guarantee the truth of something else. For example, getting a 95 on an exam is sufficient for making an A, assuming that exam is worth 100 points. A necessary condition is something that must be true in order for something else to be true. Making a 95 on an exam is not necessary for making an A---a 94 would have still been an A. Taking the exam is necessary for making an A, though. You can't make an A if you don't take the exam, or, in other words, you can make an a only if you enroll in the course.
+
+Here are some important rules to keep in mind:
+
+\begin{itemize}
+
+\item
+  `If' introduces antecedents, but \texttt{Only\ if} introduces consequents.
+\item
+  If A is a sufficient condition for B, then \(A \rightarrow B\).
+\item
+  If A is a necessary condition for B, then \(B \rightarrow A\).
+\end{itemize}
+
+\section{Biconditional}\label{biconditional}
+
+We won't spend much time on biconditionals. There are times when something is both a necessary and a sufficient condition for something else. For example, making at least a 90 and getting an A (assuming a standard scale, no curve, and no rounding up). If you make at least a 90, then you will get an A. If you got an A, then you made at least a 90. We can use a double arrow to translate a biconditional, like this:
+
+\begin{itemize}
+
+\item
+  \(N \rightarrow A\)
+\end{itemize}
+
+For biconditionals, as for conjunctions and disjunctions, order doesn't matter.
+
+Here are some English phrases that signify biconditionals:
+
+\begin{itemize}
+
+\item
+  it and only if
+\item
+  when and only when
+\item
+  just in case
+\item
+  is a necessary and sufficient condition for
+\end{itemize}
+
+\section{Translations}\label{translations}
+
+Propositional logic is language. Like other languages, it has a syntax and a semantics. The syntax of a language includes the basic symbols of the language plus rules for putting together proper statements in the language. To use propositional logic, we need to know how to translate English sentences into the language of propositional logic. We start with our sentence letters, which represent simple English sentences. Let's use three borrowed from an elementary school reader:
+
+\medskip
+\noindent \textbf{T}: Tom hit the ball.\\
+\textbf{J}: Jane caught the ball.\\
+\textbf{S}: Spot chased the ball.
+
+We then build complex sentences using the sentence letters and our five logical operators, like this:
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+\begin{tabular}{@{}ll@{}}
+\toprule
+English Sentence                                      & PL Translation           \\ \midrule
+Tom did not hit the ball.                             & \(\neg T\)               \\
+Either Tom hit the ball or Jane caught the ball.      & \(T \vee J\)             \\
+Spot chased the ball, but Jane caught it.             & \(S \mathbin{\&} J\)     \\
+If Jane caught the ball, then Spot did not chase it.  & \(J \rightarrow \neg S\) \\
+Spot chased the ball if and only if Tom hit the ball. & \(S \leftrightarrow T\)  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+We can make even more complex sentences, but we will soon run into a problem. Consider this example:
+
+\[ T \mathbin{\&} J \rightarrow S\]
+
+We don't know what this means. It could be either one of the following:
+
+\begin{enumerate}
+
+\item
+  Tom hit the ball, and if Jane caught the ball, then Spot chased it.
+\item
+  If Tom hit the ball and Jane caught it, then Spot chased it.
+\end{enumerate}
+
+The first sentence is a conjunction, \(T\) is the first conjunct and \(M \rightarrow S\) is the second conjunct. The second sentence, though, is a conditional, \(T \mathbin{\&}M\) is the antecdent, and \(S\) is the consequent. Our two interpretations are not equivalent, so we need a way to clear up the ambiguity. We can do this with parentheses. Our first sentence becomes:
+
+\[ T \mathbin{\&} (J \rightarrow S) \]
+
+The second sentence is:
+
+\[ (T \mathbin{\&} J) \rightarrow S\]
+
+If we need higher level parentheses, we can use brackets and braces. For instance, this is a perfectly good formula in propositional logic:\footnote{It may be a good formula in propositional logic, but that doesn't mean it would be a good English sentence.}
+
+\[ [(P \mathbin{\&} Q) \vee R] \rightarrow \{[(\neg P \leftrightarrow Q) \mathbin{\&} S] \vee \neg P\} \]
+
+Every sentence in propositional logic is one of six types:
+
+\begin{enumerate}
+
+\item
+  Simple
+\item
+  Negation
+\item
+  Conjunction
+\item
+  Disjunction
+\item
+  Conditional
+\item
+  Biconditional
+\end{enumerate}
+
+What type of sentence it is will be determined by its main logical operator. Sentences can have several logical operators, but they will always have one, and only one, main operator. Here are some general rules for finding the main operator in a symbolized formula of propositional logic:
+
+\begin{enumerate}
+
+
+\item
+  If a sentence has only one logical operator, then that is the main operator.
+\item
+  If a sentence has more than one logical operator, then the main operator is the one outside the parentheses.
+\item
+  If a sentence has two logical operators outside the parentheses, then the main operator is not the negation.
+\end{enumerate}
+
+Here are some examples:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+\begin{tabular}{@{}lll@{}}
+  \toprule
+Formula                                  & Main Operator & Sentence Type \\ \midrule
+\(P\)                                    & None          & Simple        \\
+\(P \land Q\)                            & $\land$       & Conjunction   \\
+\(\lneg P \land Q\)                      & $\lneg$       & Negation      \\
+\(P \vee (Q \lif R)\)                    & $\vee$        & Disjunction   \\
+\( [(P \land  \lneg Q) \liff R] \lif P\) & $\lif$        & Conditional  
+\end{tabular}
+\end{table}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "ct-text"
+%%% End:
