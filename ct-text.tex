@@ -1,0 +1,59 @@
+% arara: lualatex: { interaction: nonstopmode, synctex: yes }
+
+\documentclass[letterpaper,12pt,oneside,onecolumn]{memoir}
+
+\usepackage{graphicx,epstopdf,amsmath,amssymb,url,booktabs}
+\usepackage{microtype,todonotes}
+\usepackage[american]{babel}
+\usepackage[sf,sc]{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
+\usepackage[autostyle]{csquotes}
+\clubpenalty = 10000 % Reduce orphans and widows
+\widowpenalty = 10000
+
+\usepackage[authordate,url=false,isbn=false,backend=biber]{biblatex-chicago} %Change authordate to notes if desired.
+\addbibresource{/Users/rlridenour/Dropbox/bibtex/rlr.bib}
+
+
+\usepackage{lualatex-math,luatextra}
+\usepackage{libertinus}
+\usepackage{unicode-math}
+\usepackage[unicode=true]{hyperref}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\title{Pursuing Truth: A Guide to Critical Thinking}
+\author{Randy Ridenour}
+% \date{}  % Activate to display a given date or no date
+
+\begin{document}
+
+
+\frontmatter
+
+\begin{titlingpage}
+  \maketitle
+\end{titlingpage}
+  
+
+
+\tableofcontents*
+
+\include{preface}
+
+\mainmatter
+
+\include{intro}
+\include{arguments}
+\include{categorical}
+
+% \printbibliography
+
+\end{document}
